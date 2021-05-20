@@ -8,22 +8,45 @@
     background-color: #0d5eaf;
     color: whitesmoke;  
     border-radius: 2%;
-    margin: 15px 15px 15px 15px;
+    padding:  0px 0px 40px 0px;
+    margin: 15px 20px 15px 20px;
 }
 
 .headerCell img {
+    display: grid;
     justify-content: center;
+    align-content: center;
     border-radius: 5%;
-    height: 45vh;
+    height: 50vh;
     width: 100%;
     padding: 10px;
+    margin: 15px;
     background-color: whitesmoke;
 }
 
-.headerCell h2 {
-    justify-content: center;
+#imgFlag {
+    display: grid;
+    align-content: center;
+    height: 400px;
+    float: left;
 }
 
+#intro-text {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: #0d5eaf;
+    color: whitesmoke;
+    border-radius: 5%;
+    padding:  15px 25px 15px 25px;
+    margin: 15px 20px 15px 20px;
+}
+
+#intro-text p {
+    align-content: right;
+    justify-content: right;
+}
 
 #title {
     font-family: 'Libre Baskerville', sans-serif;
