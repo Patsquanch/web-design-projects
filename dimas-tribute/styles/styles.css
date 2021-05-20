@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.headerCell {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: #0d5eaf;
+    color: whitesmoke;  
+    border-radius: 2%;
+    margin: 15px 15px 15px 15px;
+}
+
+.headerCell img {
+    justify-content: center;
+    border-radius: 5%;
+    height: 45vh;
+    width: 100%;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.headerCell h2 {
+    justify-content: center;
+}
+
+
+#title {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 8em;
+}
+
+#subTitle {
+    font-family: 'Libre Baskerville' sans-serif;
+}
