@@ -61,6 +61,7 @@ body {
     font-family: 'Libre Baskerville', Helvetica;
     margin: auto;
     max-width: 1920px;
+    flex-direction: column;
 }
 header {
     font-family: 'Libre Baskerville', Helvetica;
@@ -124,30 +125,65 @@ a:hover {
 }
 
 body div {
+    /* universal div appearance */
     font-family: 'Libre Baskerville', Helvetica;
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     background: #0d5eaf;
     color: white;
     width: auto;
-    padding: 20px 15% 20px 15%;
+    padding: 20px 15% 50px 15%;
     margin: 20px 2%;
 }
 
 #imgFlag {
-    height: 200px;
-    margin-right: 450px;
+    /* trying to get this flag pic to the left side */
+    height: 30vh;
+    width: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    border: 5px solid white;
+    
+}
+/* I want all the text, or at least first paragraph, on the right side of the flag */
+#tribute-info h3 {
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
 }
 
-#intro-text h4{
-    font-size: 3em;
+#imgFace {
+    margin: auto;
+    margin-top: 50px;
+    border: 10px solid white;
+    width: 100%;
+}
+
+#medals {
+}
+
+#more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#more h3 {
+    font-size: 30px;
+    border: 3px solid white;
+    padding: 5px 50px 5px 50px;
 }
 
 
-footer {
-    background: black;
-    color: white;
-    padding: 10px 20px;
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer li {
+    display: inline-block;
+    margin: 20px 30px 20px 30px;
 }
