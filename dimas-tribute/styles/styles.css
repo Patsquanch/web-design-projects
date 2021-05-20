@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
-.headerCell {
+/* .headerCell {
     display: grid;
     justify-content: center;
     align-content: center;
     text-align: center;
     background-color: #0d5eaf;
-    color: whitesmoke;  
+    color: whitesmoke;
     border-radius: 2%;
     padding:  0px 0px 40px 0px;
     margin: 15px 20px 15px 20px;
@@ -17,7 +17,7 @@
     justify-content: center;
     align-content: center;
     border-radius: 5%;
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     padding: 10px;
     margin: 15px;
@@ -55,4 +55,99 @@
 
 #subTitle {
     font-family: 'Libre Baskerville' sans-serif;
+}
+*/
+body {
+    font-family: 'Libre Baskerville', Helvetica;
+    margin: auto;
+    max-width: 1920px;
+}
+header {
+    font-family: 'Libre Baskerville', Helvetica;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    background: #0d5eaf;
+    color: white;
+    padding: 20px 15% 20px 15%;
+    margin: 0px 2%;
+    align-items: center;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 5em;
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+
+#subtitle {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+
+#img-div {
+    display: flex;
+    flex-grow: -1;
+    flex-shrink: 3;
+    height: 65vh;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10%;
+    margin-bottom: 25px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header li {
+    display: inline-block;
+    margin: 20px 30px 20px 30px;
+}
+
+a:link {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: whitesmoke;
+}
+
+a:hover {
+    border-bottom: 2px solid whitesmoke;
+}
+
+body div {
+    font-family: 'Libre Baskerville', Helvetica;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #0d5eaf;
+    color: white;
+    width: auto;
+    padding: 20px 15% 20px 15%;
+    margin: 20px 2%;
+}
+
+#imgFlag {
+    height: 200px;
+    margin-right: 450px;
+}
+
+#intro-text h4{
+    font-size: 3em;
+}
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 10px 20px;
 }
