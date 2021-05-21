@@ -73,9 +73,10 @@ header {
     flex-basis: auto;
     background: #0d5eaf;
     color: white;
-    padding: 20px 15% 20px 15%;
+    padding: 10px 0 10px 0;
     margin: 0px 2%;
     align-items: center;
+    align-content: center;
 }
 
 #title {
@@ -92,14 +93,25 @@ header {
 
 #img-div {
     display: flex;
-    flex-grow: -1;
-    flex-shrink: 3;
-    height: 65vh;
-    width: 100%;
-    padding: 10px;
-    background-color: white;
+    flex-direction: column;
+    flex-shrink: 2;
+    align-items: center;
+    align-content: center;
+}
+
+#image {
+    height: auto;
+    width: auto;
+    max-width: 100%;
     border-radius: 10%;
-    margin-bottom: 25px;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+}
+
+#img-div figcaption {
+  margin-top: 5px; 
+  text-align: center;
 }
 
 header ul {
@@ -145,8 +157,9 @@ body div {
 
 #imgFlag {
     /* trying to get this flag pic to the left side */
-    height: 30vh;
+    height: 40vh;
     width: auto;
+    max-width: 100%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
