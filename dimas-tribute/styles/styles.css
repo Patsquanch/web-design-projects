@@ -182,6 +182,7 @@ body div {
 #medalsImg {
     display: grid;
     border: 10px solid white;
+    width: 100%;
     align-self: center;
     margin-right: 0;
     margin-left: 40px;
@@ -191,17 +192,14 @@ body div {
     text-decoration: underline;
     font-size: 1.5em;
     justify-self: center;
+    margin-bottom: 0;
+
 }
 
 #medalsText{
     display: grid;
-    margin-left: 70px;
-    margin-right: 10px;
+    margin: 0px 10px 35px 70px;
     line-height: 2;
-}
-
-#medalsText ul {
-    font-weight: bold;
 }
 
 #more {
