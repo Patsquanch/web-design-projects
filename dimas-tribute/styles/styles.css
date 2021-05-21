@@ -183,6 +183,8 @@ body div {
     display: grid;
     border: 10px solid white;
     align-self: center;
+    margin-right: 0;
+    margin-left: 40px;
 }
 
 #medalsText h3 {
@@ -193,8 +195,8 @@ body div {
 
 #medalsText{
     display: grid;
-    margin-left: 100px;
-    margin-right: 0;
+    margin-left: 70px;
+    margin-right: 10px;
     line-height: 2;
 }
 
