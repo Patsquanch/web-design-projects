@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
-/* .headerCell {
+/* THIS IS ALL OLD CODE, HAD TROUBLE WITH ORIGINAL LAYOUT SO RESTARTED...
+
+.headerCell {
     display: grid;
     justify-content: center;
     align-content: center;
@@ -62,6 +64,7 @@ body {
     margin: auto;
     max-width: 1920px;
     flex-direction: column;
+    font-weight: bold;
 }
 header {
     font-family: 'Libre Baskerville', Helvetica;
@@ -103,11 +106,14 @@ header ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    font-size: 1.5em;
 }
 
 header li {
     display: inline-block;
     margin: 20px 30px 20px 30px;
+    padding: 7px 10px;
+    border: 2px solid white;
 }
 
 a:link {
@@ -142,15 +148,20 @@ body div {
     height: 30vh;
     width: auto;
     margin: auto;
+    margin-top: 50px;
     margin-bottom: 50px;
     border: 5px solid white;
     
 }
 /* I want all the text, or at least first paragraph, on the right side of the flag */
 #tribute-info h3 {
-    font-size: 30px;
+    font-size: 2em;
     text-decoration: underline;
     text-align: center;
+}
+
+#tribute-info {
+    font-size: 1.25em;
 }
 
 #imgFace {
@@ -161,6 +172,34 @@ body div {
 }
 
 #medals {
+    padding: 30px;
+    padding-right: 0;
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+#medalsImg {
+    display: grid;
+    border: 10px solid white;
+    align-self: center;
+}
+
+#medalsText h3 {
+    text-decoration: underline;
+    font-size: 1.5em;
+    justify-self: center;
+}
+
+#medalsText{
+    display: grid;
+    margin-left: 100px;
+    margin-right: 0;
+    line-height: 2;
+}
+
+#medalsText ul {
+    font-weight: bold;
 }
 
 #more {
@@ -181,6 +220,7 @@ footer ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+
 }
 
 footer li {
