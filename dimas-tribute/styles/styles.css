@@ -156,7 +156,7 @@ body div {
 }
 
 #imgFlag {
-    /* trying to get this flag pic to the left side */
+    /* initially wanted flag on left but opted for top center*/
     height: 40vh;
     width: auto;
     max-width: 100%;
