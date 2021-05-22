@@ -60,34 +60,35 @@
 }
 */
 body {
+    display: flex;
     font-family: 'Libre Baskerville', Helvetica;
     margin: auto;
     max-width: 1920px;
     flex-direction: column;
-    font-weight: bold;
 }
 header {
     font-family: 'Libre Baskerville', Helvetica;
     display: flex;
     flex-direction: column;
-    flex-basis: auto;
     background: #0d5eaf;
     color: white;
-    padding: 10px 0 10px 0;
     margin: 0px 2%;
+    justify-content: center;
     align-items: center;
     align-content: center;
 }
 
 #title {
     font-weight: bold;
-    font-size: 5em;
+    font-size: clamp(30px, 10vw, 80px);
+    max-width: auto;
     text-decoration: underline;
     margin-bottom: 0px;
 }
 
 #subtitle {
-    font-size: 1.5em;
+    font-size: clamp(15px, 2vw, 25px);
+    text-align: center;
     margin-bottom: 2em;
 }
 
@@ -118,12 +119,12 @@ header ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-size: 1.5em;
+    font-size: clamp(0.5em, 2vw, 1.6em);
 }
 
 header li {
     display: inline-block;
-    margin: 20px 30px 20px 30px;
+    margin: auto auto 20px auto;
     padding: 7px 10px;
     border: 2px solid white;
 }
@@ -145,7 +146,7 @@ a:hover {
 body div {
     /* universal div appearance */
     font-family: 'Libre Baskerville', Helvetica;
-    font-size: 20px;
+    font-size: clamp(5px, 2vw, 20px);
     display: flex;
     flex-wrap: wrap;
     background: #0d5eaf;
@@ -156,7 +157,7 @@ body div {
 }
 
 #imgFlag {
-    /* initially wanted flag on left but opted for top center*/
+    
     height: 40vh;
     width: auto;
     max-width: 100%;
@@ -166,15 +167,11 @@ body div {
     border: 5px solid white;
     
 }
-/* I want all the text, or at least first paragraph, on the right side of the flag */
+
 #tribute-info h3 {
     font-size: 2em;
     text-decoration: underline;
     text-align: center;
-}
-
-#tribute-info {
-    font-size: 1.25em;
 }
 
 #imgFace {
@@ -186,44 +183,42 @@ body div {
 
 #medals {
     padding: 30px;
-    padding-right: 0;
-    font-size: 1.5em;
-    display: grid;
+    font-size: clamp(5px, 2vw, 20px);
     grid-template-columns: auto 1fr auto;
 }
 
 #medalsImg {
-    display: grid;
     border: 10px solid white;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     align-self: center;
-    margin-right: 0;
-    margin-left: 40px;
+    margin: auto;
 }
 
 #medalsText h3 {
     text-decoration: underline;
-    font-size: 1.5em;
+    font-size: clamp(1em, 1vw, 2em);
     justify-self: center;
     margin-bottom: 0;
 
 }
 
 #medalsText{
-    display: grid;
-    margin: 0px 10px 35px 70px;
+    margin: auto;
+    font-size: clamp(5px, 2vw, 20px);
     line-height: 2;
 }
 
 #more {
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-items: center;
 }
 
 #more h3 {
-    font-size: 30px;
+    font-size: clamp(10px, 2vw, 30px);
     border: 3px solid white;
     padding: 5px 50px 5px 50px;
 }
