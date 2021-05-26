@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen"/>
+        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="survey">
@@ -9,14 +10,20 @@
     </head>
     <body>
         <header>
-            <h1 id="title">TITLE</h1>
-            <p id="description">short explanation</p>
+            <h1 id="title">Client On-Board Survey</h1>
+            <p id="description">The purpose of this survey is to help me better understand your
+                desires and goals, in hopes that I may provide a better service that matches what
+                you are looking for!
+            </p>
         </header>
         <main>
             <form id="survey-form">
-                <input type="text" placeholder="Enter your name" id="name">
-                <input type="text" placeholder="Enter your email" id="email">
-                <input type="text" placeholder="Enter your age" id="number">
+                <label for="name">Enter your name:</label>
+                <input type="text" placeholder="Name" id="name">
+                <label for="email">Enter your email:</label>
+                <input type="email" placeholder="E-mail" id="email" required>
+                <label for="age">Enter your age:</label>
+                <input type="number" placeholder="age" id="number" min=0 max=100 required>
             </form>
         </main>
     </body>
